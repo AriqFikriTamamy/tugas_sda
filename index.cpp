@@ -11,7 +11,7 @@ class Product
 {
 public:
     string name;
-    double price;
+    int price;
 
     Product(string n, double p) : name(n), price(p) {}
 };
@@ -128,9 +128,9 @@ int main()
     Graph productGraph;
 
     // Menambahkan produk
-    cashRegister.addProduct("Apel", 15.000);
-    cashRegister.addProduct("Pisang", 20.000);
-    cashRegister.addProduct("Jeruk", 10.000);
+    cashRegister.addProduct("Apel", 15000);
+    cashRegister.addProduct("Pisang", 20000);
+    cashRegister.addProduct("Jeruk", 10000);
 
     // Menambahkan kategori dan produk ke graph
     productGraph.addProduct("Buah", "Apel");
@@ -141,7 +141,7 @@ int main()
     cashRegister.displayProducts();
 
     // Mencari produk
-    cashRegister.searchProduct("Banana");
+    cashRegister.searchProduct("Pisang");
 
     // Mengurutkan produk
     cashRegister.sortProducts();
